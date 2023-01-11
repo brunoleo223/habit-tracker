@@ -9,5 +9,5 @@ export interface ThemeProps {
 export const LightTheme = {
     background: '#f5f5f4',
     primary: '#1c2939',
-    secondary: '#b4b8bc'
+    secondary: '#e3e5e7'
 }

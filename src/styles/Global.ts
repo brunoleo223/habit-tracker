@@ -10,6 +10,7 @@ export default createGlobalStyle<ThemeProps>`
 
     body, html{
         background-color: ${({ theme }) => theme.background};
+        color: ${({ theme }) => theme.primary};
         font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 `;
