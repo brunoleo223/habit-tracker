@@ -1,4 +1,5 @@
 import { Calendar } from "react-calendar";
+import BoxContainer from "../BoxContainer/BoxContainer";
 import Profile from "../Profile/Profile";
 import { BoardContainer } from "./Board.style";
 
@@ -10,15 +11,21 @@ export default function Board() {
 
   return (
     <BoardContainer>
-        <Profile />
-        <div>
-            <Calendar onChange={teste} />
-            <p>Habits</p>
-        </div>
+        <BoxContainer>
+            <Profile />
+        </BoxContainer>
 
         <div>
-            <p>Mood</p>
+            <BoxContainer>
+                <Calendar onChange={teste} />
+                <p>Habits</p>
+            </BoxContainer>
+
+            <BoxContainer>
+                <p>Mood</p>
+            </BoxContainer>
         </div>
+
     </BoardContainer>
   )
 }
