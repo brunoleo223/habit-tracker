@@ -11,18 +11,27 @@ export default function Board() {
 
   return (
     <BoardContainer>
+        {/* Profile */}
         <BoxContainer>
             <Profile />
         </BoxContainer>
 
-        <div>
+        {/* Content */}
+        <div className="content">
             <BoxContainer>
-                <Calendar onChange={teste} />
-                <p>Habits</p>
+                <div>histórico</div>
             </BoxContainer>
 
             <BoxContainer>
                 <p>Mood</p>
+            </BoxContainer>
+
+            <BoxContainer>
+                <Calendar onChange={teste} />
+            </BoxContainer>
+
+            <BoxContainer>
+                <p>Habits</p>
             </BoxContainer>
         </div>
 

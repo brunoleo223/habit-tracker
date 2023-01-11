@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BoardContainer = styled.div`
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin: 2rem auto;
 
     border: 5px solid ${({ theme }) => theme.primary};
@@ -10,4 +10,11 @@ export const BoardContainer = styled.div`
     max-width: 1200px;
     border-radius: 20px;
     padding: 15px;
+
+    .content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 `;
