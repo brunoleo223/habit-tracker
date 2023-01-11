@@ -1,5 +1,6 @@
 import { Calendar } from "react-calendar";
 import BoxContainer from "../BoxContainer/BoxContainer";
+import DayLog from "../DayLog/DayLog";
 import Profile from "../Profile/Profile";
 import { BoardContainer } from "./Board.style";
 
@@ -19,7 +20,7 @@ export default function Board() {
         {/* Content */}
         <div className="content">
             <BoxContainer>
-                <div>histórico</div>
+                <DayLog />
             </BoxContainer>
 
             <BoxContainer>
