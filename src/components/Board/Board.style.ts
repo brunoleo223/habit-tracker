@@ -17,4 +17,10 @@ export const BoardContainer = styled.div`
         flex-direction: column;
         gap: 1rem;
     }
+
+    .today{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 `;

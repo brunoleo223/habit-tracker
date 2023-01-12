@@ -9,7 +9,7 @@ export interface SquareProps {
 export default function DayLog() {
     const squares = [] as any;
 
-    for (var i = 1; i < 365; i++) {
+    for (var i = 1; i <= 365; i++) {
         const item = {
             id: i,
             level: Math.floor(Math.random() * 5),
@@ -25,7 +25,13 @@ export default function DayLog() {
         <div className="squares">
             {squares.map((square: SquareProps) => (
                 <Square className="square" key={square.id} level={square.level}>
-                    {square.level}
+                    {/* show date with day and long month   */}
+                    <p>
+                        {square.date?.toLocaleDateString("pt-BR", {
+                            day: "numeric",
+                            month: "long",
+                        })} <span>|</span> 100%
+                    </p>
                 </Square>
             ))}
         </div>
