@@ -13,4 +13,8 @@ export default createGlobalStyle<ThemeProps>`
         color: ${({ theme }) => theme.primary};
         font: 16px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
+
+    h1{
+        margin-bottom: 20px;
+    }
 `;

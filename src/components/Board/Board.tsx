@@ -1,6 +1,7 @@
 import BoxContainer from "../BoxContainer/BoxContainer";
 import Calendar from "../Calendar/Calendar";
 import DayLog from "../DayLog/DayLog";
+import Habit from "../Habit/Habit";
 import Profile from "../Profile/Profile";
 import { BoardContainer } from "./Board.style";
 
@@ -34,6 +35,11 @@ export default function Board() {
                 {/* Today Habits */}
                 <BoxContainer>
                     <h1>Today</h1>
+                    <div className="habitsToday">
+                        <Habit />
+                        <Habit />
+                        <Habit />
+                    </div>
                 </BoxContainer>
             </div>
 
