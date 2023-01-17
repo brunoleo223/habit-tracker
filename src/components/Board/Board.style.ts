@@ -23,4 +23,10 @@ export const BoardContainer = styled.div`
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
+
+    .habitsToday{
+        height: auto;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
 `;

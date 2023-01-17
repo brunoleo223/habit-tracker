@@ -39,6 +39,9 @@ export default function Board() {
                         <Habit />
                         <Habit />
                         <Habit />
+                        <Habit />
+                        <Habit />
+                        <Habit />
                     </div>
                 </BoxContainer>
             </div>

@@ -33,6 +33,7 @@ export const CalendarContent = styled.div`
             button{
                 background-color: ${props => props.theme.secondary};
                 transition: all 0.1s ease-in-out;
+                height: 32.6px;
 
                 &.react-calendar__tile--now{
                     background-color: ${props => props.theme.primary};
