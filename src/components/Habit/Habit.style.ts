@@ -28,7 +28,12 @@ export const HabitContainer = styled.div`
             cursor: pointer;
 
             &:hover{
+                background-color: ${(props) => props.theme.secondary};
                 border-color: ${(props) => props.theme.primary};
+            }
+
+            &:active{
+                background-color: ${(props) => props.theme.primary};
             }
         }
     }

@@ -7,7 +7,7 @@ export const BoardContainer = styled.div`
 
     border: 5px solid ${({ theme }) => theme.primary};
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     border-radius: 20px;
     padding: 15px;
 
@@ -28,5 +28,15 @@ export const BoardContainer = styled.div`
         height: auto;
         max-height: 200px;
         overflow-y: scroll;
+    }
+
+    .moodContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        div{
+            flex: 1;
+        }
     }
 `;

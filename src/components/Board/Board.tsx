@@ -2,6 +2,7 @@ import BoxContainer from "../BoxContainer/BoxContainer";
 import Calendar from "../Calendar/Calendar";
 import DayLog from "../DayLog/DayLog";
 import Habit from "../Habit/Habit";
+import Mood from "../Mood/Mood";
 import Profile from "../Profile/Profile";
 import { BoardContainer } from "./Board.style";
 
@@ -23,7 +24,15 @@ export default function Board() {
 
             {/* Mood */}
             <BoxContainer>
-                <h1>How are you today?</h1>
+                <div className="moodContent">
+                    <div>
+                        <h1>How are you today?</h1>
+                        <Mood />
+                    </div>
+                    <div>
+                        asf
+                    </div>
+                </div>
             </BoxContainer>
 
             <div className="today">
