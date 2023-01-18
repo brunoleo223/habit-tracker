@@ -3,6 +3,7 @@ import Calendar from "../Calendar/Calendar";
 import DayLog from "../DayLog/DayLog";
 import Habit from "../Habit/Habit";
 import Mood from "../Mood/Mood";
+import MoodChart from "../MoodChart/MoodChart";
 import Profile from "../Profile/Profile";
 import { BoardContainer } from "./Board.style";
 
@@ -30,7 +31,7 @@ export default function Board() {
                         <Mood />
                     </div>
                     <div>
-                        asf
+                        <MoodChart />
                     </div>
                 </div>
             </BoxContainer>
